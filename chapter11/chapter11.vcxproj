@@ -135,8 +135,12 @@
     <ClCompile Include="bubbleSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="printIndex.cpp" />
+    <ClCompile Include="quiz4.cpp" />
+    <ClCompile Include="quiz6.cpp" />
+    <ClCompile Include="quiz7.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="blackjack.h" />
     <ClInclude Include="chapter11.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

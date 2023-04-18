@@ -8,3 +8,7 @@ void printBubbleSort();
 void printFindValue();
 
 void printSortedNames();
+
+void quiz4();
+void quiz6();
+void quiz7();
