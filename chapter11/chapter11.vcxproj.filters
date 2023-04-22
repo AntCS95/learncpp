@@ -33,6 +33,15 @@
     <ClCompile Include="11_12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="quiz1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quiz2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quiz3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter11.h">

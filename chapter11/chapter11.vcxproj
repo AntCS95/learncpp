@@ -135,6 +135,9 @@
     <ClCompile Include="bubbleSort.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="printIndex.cpp" />
+    <ClCompile Include="quiz1.cpp" />
+    <ClCompile Include="quiz2.cpp" />
+    <ClCompile Include="quiz3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter11.h" />

@@ -15,3 +15,5 @@ void ballFall();
 void isPrimeCheck();
 
 void hilo();
+
+void quiz1();
