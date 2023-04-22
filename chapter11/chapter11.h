@@ -13,3 +13,8 @@ void printSortedNames();
 void quiz1();
 void quiz2();
 void quiz3();
+void printSortedNames();
+
+void quiz4();
+void quiz6();
+void quiz7();

@@ -2,6 +2,6 @@
 
 int main()
 {
-    quiz3();
-    return 0;
+	quiz7();
+	return 0;
 }
