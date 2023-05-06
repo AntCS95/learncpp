@@ -2,10 +2,12 @@
 //
 
 #include <iostream>
+#include "chapter12.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    calculator();
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

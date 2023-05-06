@@ -103,3 +103,18 @@ ArithmeticFunction getArithmeticFunction(Operator op)
 	}
 }
 
+/*
+1e) Modify your main() function to call getArithmeticFunction().
+Call the return value from that function with your inputs and print the result.
+*/
+
+void calculator()
+{
+	auto x{ getInput<int>() };
+	auto y{ getInput<int>() };
+	auto op{ getInput<Operator>() };
+	auto fun{getArithmeticFunction(op)};
+
+	std::cout << "Result is " << fun(x, y);
+	return;
+}
