@@ -21,6 +21,15 @@
     <ClCompile Include="13_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="13_5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="13_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="13_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter13.h">

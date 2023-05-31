@@ -130,7 +130,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="13_2.cpp" />
+    <ClCompile Include="13_6.cpp" />
+    <ClCompile Include="13_7.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="13_5.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter13.h" />
