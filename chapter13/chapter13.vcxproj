@@ -129,14 +129,21 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="13_15.cpp" />
     <ClCompile Include="13_2.cpp" />
     <ClCompile Include="13_6.cpp" />
     <ClCompile Include="13_7.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="13_5.cpp" />
+    <ClCompile Include="Point3d.cpp" />
+    <ClCompile Include="quiz1.cpp" />
+    <ClCompile Include="Vector3d.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter13.h" />
+    <ClInclude Include="Point2d.h" />
+    <ClInclude Include="Point3d.h" />
+    <ClInclude Include="Vector3d.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -2,5 +2,5 @@
 
 int main()
 {
-    testBall2Class();
+    quiz1();
 }
