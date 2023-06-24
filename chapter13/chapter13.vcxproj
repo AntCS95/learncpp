@@ -130,10 +130,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="13_2.cpp" />
+    <ClCompile Include="13_3.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter13.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="cpp.hint" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
