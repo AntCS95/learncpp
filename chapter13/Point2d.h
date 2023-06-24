@@ -15,4 +15,5 @@ public:
 	double distanceTo(const Point2d& toPoint) const {
 		return sqrt(pow(m_x - toPoint.m_x, 2) + pow(m_y - toPoint.m_y, 2));
 	}
+	friend double distanceFrom(const Point2d& first, const Point2d& second);
 };
