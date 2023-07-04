@@ -44,4 +44,14 @@ void Deck::shuffle()
     using std::time;
     static mt19937 mt{ static_cast<mt19937::result_type>(time(nullptr)) };
     std::shuffle(m_deck.begin(), m_deck.end(), mt);
+    m_cardIndex = 0;
+}
+
+const Card& Deck::dealCard()
+{
+    const Card& card { m_deck[m_cardIndex++] };
+    //std::cout << "The card ";
+    //card.print();
+    //std::cout << " was dealed.\n";
+    return card;
 }

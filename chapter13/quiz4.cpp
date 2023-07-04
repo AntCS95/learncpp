@@ -1,5 +1,7 @@
 #include "Deck.h"
 #include "Card.h"
+#include "Player.h"
+#include "Blackjack.h"
 
 
 #include <iostream>
@@ -15,6 +17,21 @@ void quiz4()
     deck.print();
     deck.shuffle();
     deck.print();
+    //c)
+    std::cout << "The first card has value: " << deck.dealCard().value() << '\n';
+    std::cout << "The second card has value: " << deck.dealCard().value() << '\n';
+    //d)
+    Player player{"Player"};
+    Player dealer{"Dealer"};
+
+    player.drawCard(deck);
+    player.printScore();
+    
+    dealer.drawCard(deck);
+    dealer.printScore();
+
+    //f)
+    Blackjack();
 }
 
 /*

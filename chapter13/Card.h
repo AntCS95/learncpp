@@ -33,6 +33,12 @@ public:
         max_ranks
     };
 
+    enum Face
+    {
+        faceup,
+        facedown
+    };
+
     Card(Rank rank=rank_ace, Suit suit=club);
     void print() const;
     int value() const;

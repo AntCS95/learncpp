@@ -134,11 +134,13 @@
     <ClCompile Include="13_3.cpp" />
     <ClCompile Include="13_6.cpp" />
     <ClCompile Include="13_7.cpp" />
+    <ClCompile Include="Blackjack.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Deck.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="13_5.cpp" />
     <ClCompile Include="Monster.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="Point3d.cpp" />
     <ClCompile Include="quiz1.cpp" />
     <ClCompile Include="quiz2.cpp" />
@@ -147,12 +149,14 @@
     <ClCompile Include="Vector3d.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Blackjack.h" />
     <ClInclude Include="Card.h" />
     <ClInclude Include="chapter13.h" />
     <ClInclude Include="Deck.h" />
     <ClInclude Include="HelloWorld.h" />
     <ClInclude Include="Monster.h" />
     <ClInclude Include="MonsterGenerator.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="Point2d.h" />
     <ClInclude Include="Point3d.h" />
     <ClInclude Include="Random.h" />
