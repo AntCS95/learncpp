@@ -5,5 +5,5 @@
 
 int main()
 {
-    quiz3();
+    quiz4();
 }
