@@ -21,6 +21,9 @@
     <ClCompile Include="14_2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="14_4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter14.h">

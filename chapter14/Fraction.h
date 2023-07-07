@@ -2,6 +2,7 @@
 
 #include <numeric>
 #include <iostream>
+#include <string>
 
 class Fraction
 {
@@ -14,7 +15,7 @@ public:
 
 	void print() const
 	{
-		std::cout << m_num << '\\' << m_den << '\n';
+		std::cout << m_num << '/' << m_den << '\n';
 	}
 
 	friend Fraction operator*(const Fraction& frac1, const Fraction& frac2)
@@ -30,6 +31,29 @@ public:
 	friend Fraction operator*(int integer, const Fraction& frac)
 	{
 		return frac * integer;
+	}
+
+	friend std::ostream& operator<<(std::ostream& out, const Fraction& frac)
+	{
+		out << frac.m_num << '/' << frac.m_den;
+		return out;
+	}
+
+	friend std::istream& operator>>(std::istream& in, Fraction& frac)
+	{
+		std::string text;
+		in >> text;
+		if (text.size() == 3 && text[1] == '/')
+		{
+			frac.m_num = text[0] - '0';
+			frac.m_den = text[2] - '0';
+			frac.reduce();
+		}
+		else
+		{
+			std::cout << "Invalid Input\n";
+		}
+		return in;
 	}
 
 private:
