@@ -130,12 +130,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="14_4.cpp" />
+    <ClCompile Include="14_7.cpp" />
+    <ClCompile Include="14_9.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="14_2.cpp" />
+    <ClCompile Include="14_6.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Car.h" />
     <ClInclude Include="chapter14.h" />
     <ClInclude Include="Fraction.h" />
+    <ClInclude Include="GradeMap.h" />
+    <ClInclude Include="Point.h" />
+    <ClInclude Include="StudentGrade.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

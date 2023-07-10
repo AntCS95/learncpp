@@ -24,12 +24,33 @@
     <ClCompile Include="14_4.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="14_6.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="14_7.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="14_9.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter14.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Fraction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Point.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Car.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="StudentGrade.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GradeMap.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

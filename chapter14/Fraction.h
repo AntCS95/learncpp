@@ -56,6 +56,37 @@ public:
 		return in;
 	}
 
+	friend bool operator==(const Fraction& frac1, const Fraction& frac2)
+	{
+		return (frac1.m_num * frac2.m_num) == (frac1.m_den * frac2.m_num);
+	}
+
+	friend bool operator!=(const Fraction& frac1, const Fraction& frac2)
+	{
+		return !(frac1 == frac2);
+	}
+
+	friend bool operator<(const Fraction& frac1, const Fraction& frac2)
+	{
+		return (static_cast<double>(frac1.m_num) / frac1.m_den) <
+			(static_cast<double>(frac2.m_num) / frac2.m_den);
+	}
+
+	friend bool operator>(const Fraction& frac1, const Fraction& frac2)
+	{
+		return frac2 < frac1;
+	}
+
+	friend bool operator<=(const Fraction& frac1, const Fraction& frac2)
+	{
+		return !(frac1 > frac2);
+	}
+
+	friend bool operator>=(const Fraction& frac1, const Fraction& frac2)
+	{
+		return !(frac1 < frac2);
+	}
+
 private:
 	int m_num{ 0 };
 	int m_den{ 1 };
