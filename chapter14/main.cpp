@@ -2,5 +2,5 @@
 
 int main()
 {
-    test14_10();
+    quiz3();
 }

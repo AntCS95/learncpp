@@ -36,6 +36,12 @@
     <ClCompile Include="14_10.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="quiz2.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="quiz3.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter14.h">
@@ -57,6 +63,12 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="MyString.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Average.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="IntArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

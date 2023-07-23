@@ -136,12 +136,16 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="14_2.cpp" />
     <ClCompile Include="14_6.cpp" />
+    <ClCompile Include="quiz2.cpp" />
+    <ClCompile Include="quiz3.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Average.h" />
     <ClInclude Include="Car.h" />
     <ClInclude Include="chapter14.h" />
     <ClInclude Include="Fraction.h" />
     <ClInclude Include="GradeMap.h" />
+    <ClInclude Include="IntArray.h" />
     <ClInclude Include="MyString.h" />
     <ClInclude Include="Point.h" />
     <ClInclude Include="StudentGrade.h" />
