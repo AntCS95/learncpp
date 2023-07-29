@@ -42,6 +42,9 @@
     <ClCompile Include="quiz3.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="quiz4.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapter14.h">
@@ -69,6 +72,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="IntArray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="FixedPoint2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

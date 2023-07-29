@@ -16,3 +16,5 @@ void test14_10();
 void quiz2();
 
 void quiz3();
+
+void quiz4();
