@@ -9,34 +9,89 @@ class FixedPoint2
 {
 public:
 	FixedPoint2(int integral, int decimal)
-		//m_integral{static_cast<int16_t>(integral)},
-		//m_decimal{static_cast<uint8_t>(decimal)},
 	{
-		assert(decimal < 100 && "Decimal part is not 2 sized");
-		m_integral = std::abs(integral);
-		m_decimal = std::abs(decimal);
-		m_negative = integral < 0 || decimal < 0;
+		// we must check the decimal part has at most 2 digits.
+		//assert(std::abs(decimal) < 100 && "Decimal part is not 2 sized");
+		// case any of the given numbers is negative, we consider the FixedPoint2
+		// number is negative. In this case, both integral and decimal parts
+		// are negative.
+		if (integral < 0 || decimal < 0)
+		{
+			m_integral = -std::abs(integral);
+			m_decimal = -std::abs(decimal);
+		}
+		else
+		{
+			// we are sure the provided numbers are positive at this point
+			m_integral = integral;
+			m_decimal = decimal;
+		}
+		while (m_decimal <= -100 || m_decimal >= 100)
+		{
+			if (m_decimal <= -100)
+			{
+				m_integral -= 1;
+				m_decimal += 100;
+			}
+			if (m_decimal >= 100)
+			{
+				m_integral += 1;
+				m_decimal -= 100;
+			}
+		}
+	}
+	FixedPoint2(int i)
+	{
+		int integral, decimal;
+		integral = static_cast<int>(i/100);
+		decimal = i - integral * 100;
+		*this = { integral, decimal };
 	}
 	FixedPoint2(double d)
 	{
-		m_integral = static_cast<int>(d);
-		m_decimal = std::abs(static_cast<int>((d - m_integral)*100));
+		*this = static_cast<int>(std::round(d * 100));
 	}
 	friend std::ostream& operator<< (std::ostream& out, const FixedPoint2& num)
 	{
-		out << (num.m_negative ? '-' : '\0') << num.m_integral << '.';
-		if (num.m_decimal < 10) out << '0';
-		out << static_cast<int>(num.m_decimal);
+		// other posibility to the one implemented here is just casting
+		// the object to a double and print that double
+		// this would have simplified all this logic
+
+		// the sign that will be shown cant be the sign associated with
+		// the integral part because we have to consider the case it is 0
+		// therefore, we will explicity print the minus sign in the case the
+		// number is negative
+		if (num.m_integral < 0 || num.m_decimal < 0) out << '-';
+		out << std::abs(num.m_integral) << '.';
+		// as we are storing a max 2 digit integer, the standard out stream won't
+		// differentiate between a 1 digit and a 2 digit decimal part. We have
+		// to take this into account.
+		if (std::abs(num.m_decimal) < 10) out << '0';
+		out << std::abs(num.m_decimal);
 		return out;
 	}
-	explicit operator double()
+	explicit operator double() const
 	{
-		return (m_integral + static_cast<double>(m_decimal) / 100) * 
-			(m_negative ? -1 : 1);
+		// as both integral and decimal parts are sharing the same sign,
+		// we dont have to worry about the sign of the number, and summing both
+		// parts is sufficient
+		return (m_integral + static_cast<double>(m_decimal) / 100);
+	}
+	explicit operator int() const
+	{
+		return (m_integral * 100 + m_decimal);
+	}
+	FixedPoint2 operator+(const FixedPoint2& fp)
+	{
+		return static_cast<int>(*this) + static_cast<int>(fp);
+		//*this = { m_integral + fp.m_integral, m_decimal + fp.m_decimal };
+		//return *this;
+	}
+	bool operator==(const FixedPoint2& fp) const
+	{
+		return (m_integral == fp.m_integral && m_decimal == fp.m_decimal);
 	}
 private:
 	int16_t m_integral{ 0 };
-	uint8_t m_decimal{ 0 };
-	bool m_negative{ false };
-	
+	int8_t m_decimal{ 0 };	
 };
