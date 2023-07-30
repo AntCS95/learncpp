@@ -57,16 +57,16 @@ void quiz4()
 	std::cout << (FixedPoint2{ -0.75 } + FixedPoint2{ 1.23 } == FixedPoint2{ 0.48 }) << '\n'; // first negative, no decimal overflow
 	std::cout << (FixedPoint2{ -0.75 } + FixedPoint2{ 1.50 } == FixedPoint2{ 0.75 }) << '\n'; // first negative, possible decimal overflow
 
-	//{
-	//	FixedPoint2 a{ -0.48 };
-	//	std::cout << a << '\n';
+	{
+		FixedPoint2 a{ -0.48 };
+		std::cout << a << '\n';
 
-	//	std::cout << -a << '\n';
+		std::cout << -a << '\n';
 
-	//	std::cout << "Enter a number: "; // enter 5.678
-	//	std::cin >> a;
+		std::cout << "Enter a number: "; // enter 5.678
+		std::cin >> a;
 
-	//	std::cout << "You entered: " << a << '\n';
-	//}
+		std::cout << "You entered: " << a << '\n';
+	}
 	
 }
