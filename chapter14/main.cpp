@@ -7,6 +7,6 @@
 
 int main()
 {
-    quiz4();
+    play15Puzzle();
     return 0;
 }

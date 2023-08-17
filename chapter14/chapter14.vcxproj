@@ -136,6 +136,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="14_2.cpp" />
     <ClCompile Include="14_6.cpp" />
+    <ClCompile Include="project.cpp" />
     <ClCompile Include="quiz2.cpp" />
     <ClCompile Include="quiz3.cpp" />
     <ClCompile Include="quiz4.cpp" />

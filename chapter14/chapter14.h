@@ -18,3 +18,5 @@ void quiz2();
 void quiz3();
 
 void quiz4();
+
+void play15Puzzle();
